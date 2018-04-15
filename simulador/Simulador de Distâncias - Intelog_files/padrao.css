@@ -1,0 +1,229 @@
+﻿/*DEFINIÇÕES DE BODY*/
+body {
+	background:#FFFFFF url('../images/fundo_corpo.gif') repeat-y;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	scrollbar-base-color:#800000;
+	scrollbar-arrow-color:#FFFFFF;
+}
+body.abertura {	background-image:url('../images/fundo_abertura.gif');}
+
+/*DEFINIÇÕES DE BACKGROUNDS*/
+.fundo_menusup { background-image:url('../images/fundo_menusup.gif'); }
+.fundo_menusup_troncos { }
+.fundo_menusup_idiomas {}
+.fundo_menulat {}
+.fundo_menulat_secao {}
+.fundo_menulat_subsecao {}
+.fundo_rodape {background-image:url('../images/fundo_rodape.gif'); }
+.fundo_rodape_barra {background-image:url('../images/fundo_rodape_barra');}
+
+/*DEFINIÇÕES DE LINKS*/
+a { font-size:10px; text-decoration:underline; color:#000171; font-weight:normal}
+a:hover { color:blue; text-decoration:underline; font-size:10px; font-weight:normal}
+a.BreadCrumb { font-size:9px; text-decoration:underline; color:#993300; font-weight:normal}
+a.BreadCrumb:hover { color:#993300; text-decoration:none; font-size:9px; font-weight:normal}
+a.menulat {  font-size:10px; font-weight:normal; color:#333333; text-decoration:none}
+a.menulat:visited {  font-size:10px; font-weight:normal; color:#999999; text-decoration:none}
+a.menulat:hover { font-size:10px; font-weight:normal; color:#000000; text-decoration:none}
+a.menulat_secao { font-size:11px; font-weight:bold; color:#FFEEEE; text-decoration:none}
+a.menulat_secao:hover { font-size:11px; font-weight:bold; color:#FFD700; text-decoration:none}
+a.menulat_subsecao { font-size:10px; color:#FFEEEE; text-decoration:none }
+a.menulat_subsecao:hover { font-size:10px; color:#F8F8F8; text-decoration:underline;}
+a.menusup { font-size:10px; color:#800000; text-decoration:none; font-weight:bold; }
+a.menusup:hover { font-size:10px; color:#800000; text-decoration:underline; font-weight:bold; }
+a.menusup_barra { font-size:10px; color:#b5b591; text-decoration:none; font-weight:bold; }
+a.menusup_barra:hover { font-size:10px; color:White; text-decoration:none; font-weight:bold; }
+a.menusup_tronco { font-size:11px; font-weight:bold; color:#FFEEEE; text-decoration:none; text-transform:uppercase; }
+a.menusup_tronco:hover { font-size:11px; font-weight:bold; color:#FFCC00; text-decoration:none; text-transform:uppercase; }
+a.menuabertura { font-size:10px; font-weight:bold; color:#b5b591; text-decoration:none}
+a.menuabertura:hover { font-size:10px; font-weight:bold; color:White; text-decoration:none}
+a.rodape{font-size:10px; font-weight:bold; color:#FFEEEE; text-decoration:none}
+a.rodape:hover { font-size:10px; font-weight:bold; color:White; text-decoration:none}
+a.mapa_tronco { font-size:14px; color:#800000; text-decoration:none; font-weight:bold; }
+a.mapa_tronco:hover { font-size:14px; color:#800000; text-decoration:underline; font-weight:bold; }
+a.mapa_secao{font-size:12px; color:#800000; text-decoration:none; font-weight:bold; }
+a.mapa_secao:hover { font-size:12px; color:#800000; text-decoration:underline; font-weight:bold; }
+a.mapa_subsecao{font-size:10px; color:#800000; text-decoration:none; font-weight:normal; }
+a.mapa_subsecao:hover { font-size:10px; color:#800000; text-decoration:underline; font-weight:normal; }
+
+a.layout_medio { font-size:12px; font-weight:bold; color:#333333; text-decoration:none }
+a.layout_medio:hover { font-size:12px; font-weight:bold; color:#800000; text-decoration:none}
+a.layout_pequeno{ font-size:12px; color:#800000; text-decoration:none;  }
+a.layout_pequeno:visited{ font-size:12px; color:#666666; text-decoration:none;  }
+a.layout_pequeno:hover { font-size:12px; color:#800000; text-decoration:underline; }
+a.layout_pequeno2{ font-size:11px; color:#AAAAAA; text-decoration:none;  }
+a.layout_pequeno2:hover { font-size:11px; font-weight:bold; color:#AAAAAA; text-decoration:underline; }
+a.layout_mini{ font-size:10px; color:#800000; text-decoration:none; font-weight:bold; }
+a.layout_mini:hover { font-size:10px; color:#800000; text-decoration:underline; font-weight:bold; }
+a.layout_mini2{ font-size:10px; color:#FFEEEE; text-decoration:none; }
+a.layout_mini2:hover { font-size:10px; color:#FFFFFF; text-decoration:none;}
+
+/*DEFINIÇÕES DE PARÁGRAFOS*/
+p.menusup_tronco { font-size:11px; font-weight:bold; color:#FFEEEE; text-decoration:none; text-transform:uppercase; }
+p.menulat_secao { font-size:11px; font-weight:bold; color:#FFEEEE; text-decoration:none}
+p.menulat_subsecao { font-size:11px; color:#FFEEEE; text-decoration:none }
+
+/*DEFINIÇÕES DE PARÁGRAFOS DOS LAYOUTS*/
+p.layout_pequeno{ font-size:11px; color:#800000; text-decoration:none;  }
+p.layout_pequenoDestaque{ font-size:11px; font-weight:bold; color:#800000; text-decoration:none;  }
+p.layout_pequenoDestaque2{ font-size:11px; color:#E77918; text-decoration:none;  }
+h1, p.layout_titulo { font-size:20px; font-weight:bold; color:#800000; letter-spacing:-1px; }
+p.layout_texto { font-size:11px; font-weight:normal; color:#333333; font-style:normal}
+p.layout_textoDiscreto { font-size:11px; font-weight:normal; color:#AAAAAA; font-style:normal}
+p.layout_textoDiscreto2 { font-size:11px; font-weight:normal; color:#8C8E8C; font-style:normal}
+h2, p.layout_subtitulo { font-size:14px; font-weight:bold; color:#800000; }
+p.layout_titulo_negativo { font-size:16px; font-weight:bold; color:#E8E8E8;}
+p.layout_texto_negativo { font-size:9pt; font-weight:normal; color:White; font-style:normal}
+p.layout_subtitulo_negativo { font-size:12px; font-weight:bold; color:#D3D3D3; }
+p.layout_rodape { font-size:9px; font-weight:normal; color:#FFEEEE; font-style:normal}
+p.BreadCrumb { font-size:9px; color:#CC6600; font-weight:bold;}
+p.Widget_titulo { font-size:20px; font-weight:bold; color:#800000;}
+
+/*DEFINIÇÕES DE FORMULÁRIOS*/
+.Campo {font-family:Arial; color:#000000; border-style:solid; border-width:1; padding-left:4; padding-right:4; padding-top:1; padding-bottom:1; background-color:#FEFEFE; font-size:10px}
+.CampoObrig {font-family:Arial; color:#000000; border-style:solid; border-width:1; padding-left:4; padding-right:4; padding-top:1; padding-bottom:1; background-color:#EEEEEE; font-size:10px}
+.Botao, .btSalvar, .btCancelar, .btFiltrar, .btAdicionar, .btVoltar {padding:1; border-style:solid; border-width:1; background-color:#800000; font-size:10px;color:#FFFFFF}
+.edit.CampoObrig{border-color: #A9A9A9;font-size: 12px;padding: 5px 5px;width: 82%;min-width: 303px;}
+
+/*DEFINIÇÕES DE FEEDS*/
+.FeedPanelButton {padding:0 10px 0 10px;height:33px;width:104px;vertical-align:middle;text-align:center;background:url('../imagens/rss_bot1.jpg') no-repeat;line-height:33px;overflow:hidden; cursor:pointer;}
+.FeedPanelButtonWidget {padding:0 10px 0 10px;height:33px;width:125px;vertical-align:middle;text-align:center;line-height:33px;overflow:hidden;}
+.FeedPanelButton a {font-weight:normal;font-size:10px; color:#333333;text-decoration:none;cursor:pointer;vertical-align:middle;}
+.FeedPanelButton a:hover {color:#333333;text-decoration:underline;}
+.FeedPanelButtonA {padding:0 10px 0 10px;height:33px;width:104px;vertical-align:middle;text-align:center;background:url('../imagens/rss_bot2.jpg') no-repeat;line-height:33px;overflow:hidden;}
+.FeedPanelButtonA a {font-weight:normal;font-size:10px; color:#333333;text-decoration:none;cursor:pointer;}
+.FeedPanelButtonA a:hover {color:#333333;text-decoration:underline;}
+li.FeedItem {list-style:url(../images/bullet3.gif);padding:0 0 5px;}
+a.FeedItem {font-size:10px; font-weight:normal; color:#333333; text-decoration:none;}
+a.FeedItem:hover {font-size:10px; font-weight:normal; color:#333333; text-decoration:underline;}
+
+/*DEFINICÕES DO TRANSITFEED*/
+div.TransitFeed {margin:10px; font-family:Arial, Helvetica, sans-serif; font-size:11px; text-align:left;}
+div.transit {margin:30px 0;}
+div.transit div.transitlogo { position:relative; z-index:999; left:15px;}
+div.transit div.box1 {width:380px; background:url('../images/transit_box1_fundo.jpg') repeat-y; margin:0 auto; position:relative; padding:0;}
+div.transit div.box1 div.top { background:url('../images/transit_box1_top.jpg') no-repeat; top:0px; width:100%; height:12px; left:0}
+div.transit div.box1 div.meio { padding:0 10px; color:#fff; }
+div.transit div.box1 div.bottom { background:url('../images/transit_box1_bottom.jpg') no-repeat; bottom:0; width:100%; height:12px; left:0;}
+div.transit div.listaavatar { position:relative; height:50px; padding:15px 10px 0 20px;}
+div.transit div.listaavatar div.avatar { position:relative; float:left; margin:0 5px 0 0;}
+div.transit div.listaavatar div.detalhe { background:url('../images/transit_detalhe_avatar.png') no-repeat; height:50px; width:50px; position:absolute;z-index:1000;cursor:pointer}
+div.transit div.listaavatar div.btnext { position:absolute; right:0; top:30px;}
+div.transit div.listaavatar div.btprev { position:absolute; left:0; top:30px;}
+div.transit select {padding:5px; margin:0 5px 0 0; border:solid 1px #999; font-weight:bold; font-size:13px;}
+div.transit div.box2 {width:400px; height:400px; background:url('../images/transit_box2_fundo.jpg') repeat-y; margin:5px 0 0 35px; position:relative; padding:0 0; overflow:hidden;}
+div.transit div.box2 div.top { background:url('../images/transit_box2_top.jpg') no-repeat; top:0; width:100%; height:12px; left:0}
+div.transit div.box2 div.bottom { background:url('../images/transit_box2_bottom.jpg') no-repeat; position:relative; bottom:0; width:100%; height:12px; left:0;}
+div.transit div.box2 div.meio { padding:0 10px;}
+div.transit div.box2 div.meio div.postfeed { border-bottom:solid 1px #fff; padding:0 0 5px 0; margin:0 30px 0 0;}
+div.transit div.box2 div.meio p.de { padding:0; margin:10px 0 10px 0;}
+div.transit div.box2 div.meio p.h { color:#f00;}
+div.transit div.box2 div.meio a { color:#f00; text-decoration:underline; font-size:12px}
+div.transit div.box2 div.meio a.postlink {font-size:11px;color:#810101}
+div.siganos { width:420px; padding:10px 0;}
+
+/*DEFINICÕES DO CCRTRANSIT*/
+div.ccrtransito {margin:10px;}
+div.ccrtransito div.box1 {width:420px; padding:55px 0 10px 0; background:url(../images/ccrtransito_topobox2.png) no-repeat center top; margin:0 auto; position:relative; text-align:right;}
+div.ccrtransito div.ccrtransitologo { position:absolute; top:-20px; z-index:999; left:10px;}
+div.ccrtransito select {margin:-35px 5px 0 0; border:solid 1px #999; font-weight:bold; font-size:13px;}
+div.ccrtransito div.box2 {width:420px; padding:20px 0; background:url(../images/ccrtransito_box2_fundo2.png) repeat-y; margin:-5px auto; position:relative;}
+div.ccrtransito div.box2 div.top { background:url(../images/ccrtransito_box2_top2.png) no-repeat; position:absolute; top:0; width:100%; height:12px; left:0;}
+div.ccrtransito div.box2 div.bottom { background:url(../images/ccrtransito_box2_bottom2.png) no-repeat bottom; position:absolute; bottom:0; width:100%; height:12px; left:0;}
+div.ccrtransito div.box2 div.meio { padding:0 10px;}
+div.ccrtransito div.box2 div.meio div.postfeed{ border-bottom:solid 1px #fff; padding:0 0 5px 0; margin:0 0px 0 0;}
+div.ccrtransito div.box2 div.meio p.de { padding:0;}
+div.ccrtransito div.box2 div.meio p.de b {font-size:10px; color:#666; font-weight:normal;margin-top:-7px}
+div.ccrtransito div.box2 div.meio p.h { color:#f00;}
+div.ccrtransito div.box2 div.meio a { color:#f00; text-decoration:none;}
+div.ccrtransito div.box2 div.meio a { color:#f00; text-decoration:underline;}
+
+div.siganos { width:200px; padding:10px 0; margin:0 auto;}
+
+/*DEFINIÇÕES DE AVALIACAO*/
+p.Aval1 { font-size:8px;margin:0px;color:#73470E;}
+p.Aval2 { font-family:arial;font-size:24px;font-weight:bolder;margin:0px;color:#7F0101;}
+p.Aval1 { font-size:8px;margin:0px;color:#73470E;}
+p.Aval2 { font-family:arial;font-size:24px;font-weight:bolder;margin:0px;color:#7F0101;}
+p.Aval3 { font-family:arial;font-size:12px;font-weight:bold;margin:0px;color:#98631E;}
+p.Aval4 { font-size:10px;margin:0px;color:#73470E;}
+a.Aval4 { font-size:10px;margin:0px;color:#73470E;text-decoration:underline;}
+a.Aval4:hover {color:#73470E;}
+
+/*DEFINIÇÕES DE WIDGET*/
+a.widget {  font-size:11px; font-weight:bold; color:#800000; text-decoration:none}
+a.widget:hover {  font-size:11px; font-weight:bold; color:#800000; text-decoration:underline}
+a.widget_rodape {  font-size:13px; font-weight:bold; color:#8C8E8C; text-decoration:none}
+a.widget_rodape:hover {  font-size:13px; font-weight:bold; color:#8C8E8C; text-decoration:none}
+
+/*DEFINIÇÕES DO SIMULADOR DE DISTANCIAS*/
+div.simulador { padding:0 10px 0 10px;}
+div.simulador p {color:#000000; font-size:12px; margin:0;padding:0;}
+div.simulador p.destaque {color:#800000; font-size:16px; font-weight:bold; margin:0;padding:0;}
+div.simulador p.discreto {color:#999999; font-size:12px;margin:0;padding:0}
+div.simulador a {color:#800000; font-size:11px; margin:0;padding:0;text-decoration:none;font-weight:bold;}
+div.simulador input { font-size:16px; color:#666666; border:1px solid #999999;padding:2px;}
+
+/*DEFINIÇÕES DO TICKER */
+div.ticker{display:none;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;overflow:hidden;background-color:#fff;}
+div.ticker span.titulo{background-color:#800000;color:#ffffff;font-weight:bold;padding:0;font-size:11px;}
+div.ticker span.texto{background-color:#ffffff;color:#800000;padding:0;color:#800000; font-size:11px;}
+
+/*DEFINIÇÕES DE CURSORES*/
+.clscursor {cursor:hand;}
+
+/*DEFINIÇÕES EXCLUSIVA DO CENTRO DE CONTROLE*/
+body.Admin {
+	background-color:#FFFFFF;
+	background-image:url('../images/pixel.gif');
+	font-family:Tahoma, Helvetica, Arial
+}
+p.Admin_TituloPagina { font-size:11px; font-weight:normal; color:#4E4743; text-decoration:none; font-style:normal}
+p.Admin_Titulo { font-size:12px; font-weight:bold; color:#4E4743; text-decoration:none; }
+p.Admin_SubTitulo { font-size:11px; font-weight:bold; color:#4E4743; text-decoration:none; }
+p.Admin_Texto { font-size:11px; font-weight:normal; color:#4E4743; text-decoration:none; font-style:normal}
+p.Admin_TextoDestaque { font-size:11px; font-weight:bold; color:#4E4743; text-decoration:none; }
+p.Admin_TextoDiscreto { font-size:11px; font-weight:normal; color:#AAAAAA; text-decoration:none; font-style:normal}
+p.Admin_Erro { font-size:11px; font-weight:bold; color:#800000; text-decoration:none; }
+p.Admin_TextoNegativo { font-size:11px; font-weight:normal; color:White; text-decoration:none; font-style:normal}
+
+a.Admin_Menulat1 { font-size:12px; font-weight:bold; color:#4E4743; text-decoration:none}
+a.Admin_Menulat1:hover { font-size:12px; font-weight:bold; color:#007BB9; text-decoration:none}
+a.Admin_Menulat2 { font-size:11px; font-weight:100; color:#838280; text-decoration:none }
+a.Admin_Menulat2:hover { font-size:11px; font-weight:100; color:black; text-decoration:none;}
+a.Admin_Destaque { font-size:11px; font-weight:bold; color:#005B88; text-decoration:none}
+a.Admin_Destaque:hover { font-size:11px; font-weight:bold; color:#007BB9; text-decoration:none}
+a.Admin_Padrao { font-size:11px; font-weight:bold; color:#4E4743; text-decoration:none}
+a.Admin_Padrao:hover { font-size:11px; font-weight:bold; color:#007BB9; text-decoration:none}
+a.Admin_Secundario { font-size:11px; font-weight:normal; color:#4E4743; text-decoration:none}
+a.Admin_Secundario:hover { font-size:11px; font-weight:normal; color:#007BB9; text-decoration:none}
+a.Admin_Controle { font-size:11px; font-weight:normal; color:#005B88; text-decoration:none}
+a.Admin_Controle:hover { font-size:11px; font-weight:normal; color:#007BB9; text-decoration:none}
+a.Admin_Controle2 { font-size:11px; font-weight:bold; color:#005B88; text-decoration:none}
+a.Admin_Controle2:hover { font-size:11px; font-weight:bold; color:#007BB9; text-decoration:none}
+
+table.Admin_Contorno {border:1px solid #999999; border-collapse:collapse;}
+table.Admin {}
+td.Admin_Tab {background-color:#B0BDDB;}
+td.Admin_Tab2 {background-color:#B0BDDB;}
+td.Admin_Titulo {background-color:#B0BDDB; border-bottom:1px solid #999999;}
+td.Admin_SubTitulo {background-color:#EBEBEB; border-bottom:1px solid #999999;}
+td.Admin_Registro {border-top:1px dotted #C0C0C0;}
+td.Admin_Final {border-top:1px solid #C1C1C1;}
+td.Admin_Registro2 {border-bottom:1px solid #E0E0E0;}
+
+
+
+
+/*
+    ** Defini?es de MODAL
+*/
+div.modal {z-index: 999999;}
+    div.modal > .--bg {z-index: 999;  background: #444;  opacity: .8;}
+    div.modal > .--conteudo {position: absolute; z-index: 9999;  top: 50%; left: 50%; margin-top: -157px; margin-left: -280px;  width: 560px; height: 315px;  box-sizing: border-box;  background: #FFF;}
+    div.modal > .--conteudo > span {display: block;  padding: 10px;  font-size: 11px; text-align: right;  cursor: pointer;}
+
+
+    /* EM COMUM */
+    div.modal,
+    div.modal > .--bg {position: fixed; width: 100%; height: 100%;}

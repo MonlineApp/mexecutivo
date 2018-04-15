@@ -1,0 +1,369 @@
+function OpenSimulador(Url){PosX=((screen.availWidth-650)/2);PosY=((screen.availHeight-450)/2);NotWindow=window.open(Url,"Noticias","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 1,resizable=1,copyhistory=0,width=650,height=420,left="+PosX+",top="+PosY+",screenX="+PosX+",screenY="+PosY);NotWindow.focus();}
+
+function OpenWindowMapa() {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 625)/2);
+  PosY = ((screen.availHeight - 630)/2);
+  MapaWindow=window.open('../personal/mapa.asp','Mapa',"toolbar= 0,location= 0,directories= 0,status=0,menubar= 0,scrollbars=0,resizable= 0,copyhistory=0,width=625,height=4,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  MapaWindow.focus();
+}
+
+function OpenWindowExtranet(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 750)/2);
+  PosY = ((screen.availHeight - 550)/2);
+  ExtWindow=window.open(Url,'Extranet',"toolbar= 0,location= 0,directories= 0,status=1,menubar= 0,scrollbars=0,resizable= 0,copyhistory=0,width=750,height=550,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  ExtWindow.focus();
+}
+
+function OpenWindowAdmin(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 630)/2);
+  PosY = ((screen.availHeight - 450)/2);
+  AdminWindow=window.open(Url,"Administracao","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 1,resizable= 0,copyhistory= 1,width=630,height=450,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  AdminWindow.focus();
+}
+
+function OpenWindowInfos(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 630)/2);
+  PosY = ((screen.availHeight - 350)/2);
+  InfoWindow=window.open(Url,"Informacoes","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 1,resizable= 0,copyhistory= 1,width=630,height=350,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  InfoWindow.focus();
+}
+
+function Recomendar(Url) {
+    //Define posição da janela no centro da tela
+    PosX = ((screen.availWidth - 620)/2);
+    PosY = ((screen.availHeight - 350)/2);
+    var Link = document.location.href;
+    Link = Link.replace(/&/g, '[p]');
+    Convite = window.open(Url+"?Link="+Link,"Convite","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 1,resizable= 0,copyhistory=0,width=620,height=350,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+    Convite.focus();
+}
+
+function imprimetudo(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 720)/2);
+  PosY = ((screen.availHeight - 500)/2);
+  PrintWindow=window.open(Url,"Imprimir","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars=1,resizable=1,copyhistory=0,width=720,height=500,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  PrintWindow.focus();
+}
+
+function OpenDownload(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 600)/2);
+  PosY = ((screen.availHeight - 350)/2);
+  DownWindow=window.open(Url,"Downloads","toolbar= 0,location= 0,directories= 0,status= 0,menubar= 0,scrollbars= 1,resizable= 1,copyhistory= 1,width=600,height=350,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  DownWindow.focus();
+}
+
+function OpenTextoAleatorios(Url) {
+  NotWindow=window.open(Url,'Textos','toolbar= 0,location= 0,directories= 0,status= 0,menubar= 0,scrollbars= 0,resizable= 0,copyhistory= 0,width=550,height=300');
+}
+
+function OpenWindowImagem(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 500)/2);
+  PosY = ((screen.availHeight - 450)/2);
+  ImagemWindow=window.open(Url,'Imagem',"toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 0,resizable= 1,copyhistory= 1,width=500,height=450,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  ImagemWindow.focus();
+}
+
+function OpenWindowNoticia(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 500)/2);
+  PosY = ((screen.availHeight - 500)/2);
+  NotWindow=window.open(Url,"Noticias","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 1,resizable=1,copyhistory=0,width=500,height=500,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  NotWindow.focus();
+}
+
+function OpenWindowArquivo(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 550)/2);
+  PosY = ((screen.availHeight - 200)/2);
+  ArqWindow=window.open(Url,"AnexarArquivo","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars=1,resizable=0,copyhistory= 1,width=550,height=200,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  ArqWindow.focus();
+}
+
+function OpenWindowNewsletter(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 680)/2);
+  PosY = ((screen.availHeight - 500)/2);
+  NewsWindow=window.open(Url,"NEwsletter","toolbar= 0,location= 0,directories= 0,status= 0,menubar= 0,scrollbars=1,resizable=1,copyhistory=0,width=680,height=500,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  NewsWindow.focus();
+}
+
+function OpenTranslate(Url,cfg1) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 1024)/2);
+  PosY = ((screen.availHeight - 768)/2);
+  TransWindow=window.open('../site/translate.asp?cfg1='+cfg1+'&url='+escape(Url),"Newsletter","toolbar= 0,location= 0,directories= 0,status= 0,menubar= 0,scrollbars=0,resizable=1,copyhistory=0,width=1024,height=768,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  TransWindow.focus();
+}
+
+function OpenVideo(titulo,video,size) {
+  //Size: "320X240" ou "280X210"
+  //Define posição da janela no centro da tela
+  if (size="320X240"){largura=350;altura=340;} else {largura=320;altura=250;}
+  PosX = ((screen.availWidth - largura)/2);
+  PosY = ((screen.availHeight - altura)/2);
+  VideoWindow=window.open('../videos/show.asp?Titulo='+titulo+'&Video='+video+'&Size='+size,'Videos',"toolbar=0,location=0,directories=0,status=0,menubar=0,fullscreen=0,scrollbars=0,resizable=0,copyhistory=0,width="+largura+",height="+altura+",left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  VideoWindow.focus();
+}
+
+function OpenPopup(Url, Nome, dimX, dimY) {
+  //Define posição da janela no centro da tela
+  if (!dimX){dimX=680;}
+  if (!dimY){dimY=500;}
+  if (!Nome){Nome="Pop";}
+  var PosX = ((screen.availWidth - dimX)/2);
+  var PosY = ((screen.availHeight - dimY)/2);
+  PopWindow=window.open("../site/popup.asp?Url="+Url,Nome,"toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=0,resizable=1,copyhistory=0,width="+dimX+",height="+dimY+",left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  PopWindow.focus();
+}
+
+function OpenWindowFiltro(Url) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 450)/2);
+  PosY = ((screen.availHeight - 230)/2);
+  FiltroWindow=window.open(Url,"Filtro","toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars=0,resizable=0,copyhistory= 1,width=450,height=230,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  FiltroWindow.focus();
+}
+
+function OpenWindowBookmarks(Url) {
+  BMWindow=window.open(Url,'Bookmarks','toolbar= 0,location= 0,directories= 0,status= 1,menubar= 0,scrollbars= 1,resizable= 0,copyhistory= 1,width=650,height=300');
+  BMWindow.focus();
+}
+
+//Funções do Macromedia Flash
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_controlShockwave(objStr,x,cmdName,frameNum) { //v3.0
+  var obj=MM_findObj(objStr);
+  if (obj) eval('obj.'+cmdName+'('+((cmdName=='GotoFrame')?frameNum:'')+')');
+}
+
+
+function SetHomeSite(olink) {
+    Endereco = window.location;
+    olink.style.behavior='url(#default#homepage)'
+    olink.setHomePage(Endereco);
+    return false;
+}
+
+function AddBookmark() {
+    Titulo = document.title;
+    Endereco = window.location;
+    window.external.AddFavorite(Endereco, Titulo);
+}
+
+
+/*-------------------------------------------------------------------------------------
+SetTextBox
+Descrição: Função para setar um valor em um determinado text box de um form
+Autor: Mário Wittler
+Data:22/11/01
+Parâmetros:
+	-> Formulario: Nome do Form
+	-> TextBox: Nome do TextBox
+	-> Valor: Valor do textbox
+Retorno:
+	-> Nenhum
+Exemplo: 
+	-> <script Language="Javascript">SetFileName('Form', 'Imagem', 'imagem.gif')</script>
+Observações:
+	-> A janela que contém este código deve ser aberta por outra janela (Opener)
+	-> Na janela Opener deve conter um edit chamado Arquivo em um Form FormArquivo
+-------------------------------------------------------------------------------------*/
+function SetFileName(Formulario, TextBox, Valor){
+	window.opener.document.forms[Formulario].elements[TextBox].value = Valor;
+	window.close();
+} 
+
+
+/*-------------------------------------------------------------------------------------
+mOvr / mOut
+Descrição: Função para alterar cor do fundo da linha quando o mouse passa sobre a selula
+Autor: Mário Wittler
+Data:05/06/2003
+Parâmetros:
+	-> src: Objeto (TR ou TD)
+	-> clrOver/clrIn: Nova Cor
+Retorno:
+	-> Nenhum
+-------------------------------------------------------------------------------------*/
+function mOvr(src,clrOver) {
+	document.all.item("tr"+src).style.background = clrOver;
+	document.all.item("l"+src).style.color = "#FFFFFF";
+}
+function mOut(src,clrIn) {
+	document.all.item("tr"+src).style.background = clrIn;
+	document.all.item("l"+src).style.color = "";
+} 
+
+
+/*-------------------------------------------------------------------------------------
+showHideContent
+Descrição: Função para esconder/mostrar o conteúdo de um span
+Autor: Mário Wittler
+Data:22/11/01
+Parâmetros:
+	-> id: ID do span
+	-> Status: '', 'none'
+Retorno:
+	-> Nenhum
+Exemplo: 
+	-> <script Language="Javascript">showHideContet('sValores', 'none')</script>
+Observações:
+	-> O conteúdo a ser exibido deve estar dentro da tag <span id=""></span>
+-------------------------------------------------------------------------------------*/
+function showHideContent(id, status)
+{
+	var oContent = document.getElementById(id);
+	if (oContent) {
+		oContent.style.display = status;
+	}
+}
+
+
+
+/*-------------------------------------------------------------------------------------
+ShowMenuAdmin / HideMenuAdmin
+Descrição: Funções para exibir e esconder o menu de contexto da administração
+Autor: Mário Wittler
+Data:12/11/03
+Parâmetros:
+	-> id: ID do div
+Retorno:
+	-> Nenhum
+Exemplo: 
+	-> <script Language="Javascript">showMenuAdmin('menu1')</script>
+Observações:
+	-> O conteúdo a ser exibido deve estar dentro da tag <div id="menu1"></span>
+	-> É criada uma variável chamada MenuAdmin que controla quando o menu está ativo ou não
+-------------------------------------------------------------------------------------*/
+var MenuAdmin
+function ShowMenuAdmin(id){
+	HideMenuAdmin();
+	if (!id) {id = 'Admin_Contexto';}
+	MenuAdmin = document.all.item(id);
+	if (MenuAdmin){
+		var rightedge=document.body.clientWidth-event.clientX
+		var bottomedge=document.body.clientHeight-event.clientY
+
+		if (rightedge<MenuAdmin.offsetWidth)
+			MenuAdmin.style.left=document.body.scrollLeft+event.clientX-MenuAdmin.offsetWidth
+		else
+			MenuAdmin.style.left=document.body.scrollLeft+event.clientX
+		if (bottomedge<MenuAdmin.offsetHeight)
+			MenuAdmin.style.top=document.body.scrollTop+event.clientY-MenuAdmin.offsetHeight
+		else
+		MenuAdmin.style.top=document.body.scrollTop+event.clientY
+		MenuAdmin.style.visibility="visible"
+	}
+	return false
+}
+
+function HideMenuAdmin(){
+	if (MenuAdmin) {
+		MenuAdmin.style.visibility="hidden";
+	}
+}
+
+/*-------------------------------------------------------------------------------------
+EditMask
+Descrição: formata um campo do formulário de acordo com a máscara informada
+Autor: Mário Wittler
+Data:08/09/2003
+Parâmetros:
+	- objField: objeto do edit box
+	- sMask: mascara que define o formato que o dado será apresentado, usando o algarismo "9" para definir números e o símbolo "!" para qualquer caracter...
+	- evtKeyPress: evento disparado
+Retorno:
+	-> Nenhum
+Exemplo: 
+	-> <input type="textbox" name="xxx" onkeypress="return txtBoxFormat(this, '99999-999', event);"
+Observações:
+	-> Observação: As máscaras podem ser representadas assim: CEP -> 99999-999; CPF -> 999.999.999-99; CNPJ -> 99.999.999/9999-99; C/C -> 999999-!; Tel -> (99) 9999-9999
+	-> O conteúdo a ser exibido deve estar dentro da tag <span id=""></span>
+-------------------------------------------------------------------------------------*/
+function EditMask(objField, sMask, evtKeyPress) {
+	var i, nCount, sValue, fldLen, mskLen,bolMask, sCod, nTecla;
+
+	if(document.all) { // Internet Explorer
+		nTecla = evtKeyPress.keyCode;
+	} else { // Nestcape
+		nTecla = evtKeyPress.which;
+	}
+	sValue = objField.value;
+
+	// Limpa todos os caracteres de formatação que
+	// já estiverem no campo.
+	sValue = sValue.toString().replace( "-", "" );
+	sValue = sValue.toString().replace( "-", "" );
+	sValue = sValue.toString().replace( ".", "" );
+	sValue = sValue.toString().replace( ".", "" );
+	sValue = sValue.toString().replace( "/", "" );
+	sValue = sValue.toString().replace( "/", "" );
+	sValue = sValue.toString().replace( "(", "" );
+	sValue = sValue.toString().replace( "(", "" );
+	sValue = sValue.toString().replace( ")", "" );
+	sValue = sValue.toString().replace( ")", "" );
+	sValue = sValue.toString().replace( ":", "" );
+	sValue = sValue.toString().replace( ":", "" );
+	sValue = sValue.toString().replace( " ", "" );
+	sValue = sValue.toString().replace( " ", "" );
+	fldLen = sValue.length;
+	mskLen = sMask.length;
+
+	i = 0;
+	nCount = 0;
+	sCod = "";
+	mskLen = fldLen;
+
+	while (i <= mskLen) {
+		bolMask = ((sMask.charAt(i) == "-") || (sMask.charAt(i) == ".") || (sMask.charAt(i) == "/") || (sMask.charAt(i) == ":"))
+		bolMask = bolMask || ((sMask.charAt(i) == "(") || (sMask.charAt(i) == ")") || (sMask.charAt(i) == " "))
+
+		if (bolMask) {
+			sCod += sMask.charAt(i);
+			mskLen++; }
+		else {
+			sCod += sValue.charAt(nCount);
+			nCount++;
+		}
+
+		i++;
+	}
+
+	objField.value = sCod;
+	if (nTecla != 8) { // backspace
+	if (sMask.charAt(i-1) == "9") { // apenas números...
+		return ((nTecla > 47) && (nTecla < 58)); } // números de 0 a 9
+	else { // qualquer caracter...
+		return true;
+	} }
+	else {
+		return true;
+	}
+}
+
+function AtendimentoOnline(tipo) {
+  //Define posição da janela no centro da tela
+  PosX = ((screen.availWidth - 400)/2);
+  PosY = ((screen.availHeight - 250)/2);
+  switch (tipo){
+	case "Skype": url = "../atendimento/skypego.asp";break;
+	default: url = "../atendimento/logisticaonline.asp";break;
+  }
+  AtendOnline=window.open(url,tipo,"toolbar= 0,location= 0,directories= 0,status=0,menubar= 0,scrollbars=0,resizable=0,copyhistory=0,width=400,height=250,left=" + PosX + ",top=" + PosY + ",screenX=" + PosX + ",screenY=" + PosY);
+  AtendOnline.focus();
+}
+
