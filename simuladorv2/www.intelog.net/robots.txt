@@ -1,0 +1,20 @@
+
+# Desabilita os diretórios para todos os agents. 
+# Se desejar, pode desabilitar diretórios para agents  específicos, substituir * pelo nome do agent. 
+
+User-agent: *
+Disallow: global.asa
+Disallow: idiomas.cfg
+Disallow: database.cfg
+Disallow: /_private/
+Disallow: /_vti_cnf/
+Disallow: /_vti_pvt/
+Disallow: /admin/
+Disallow: /avisos/
+Disallow: /chamados/
+Disallow: /comum/
+Disallow: /imagens/
+Disallow: /images/
+Disallow: /HTMLEditor/
+Disallow: /ImageBank/
+Disallow: /usuarios/
