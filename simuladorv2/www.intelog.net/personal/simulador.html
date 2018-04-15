@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Simulador de Distâncias - Intelog</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<script language="javascript" type="text/javascript" src="../../maps.google.com/maps/api/js%3Fkey=AIzaSyAoj0sRPgOic1xkJWhIFQgNPKb6Luzoc4c&amp;sensor=true"></script>
+<script language="javascript" type="text/javascript" src="http://j.maxmind.com/app/geoip.js"></script> 
+<script language="javascript" type="text/javascript" src="simuladorV2.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.intelog.net/comum/util.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.intelog.net/comum/padrao.css">
+<script language="javascript" type="text/javascript">
+	var MSGSIM001 = "Não foi possível traçar a rota. Tente novamente.";
+</script>
+</head>
+<body onload="localizacao();" class="Admin">
+<div class="simulador">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+		<tr>
+			<td align="left" height="15" width="50%"><img src="http://www.intelog.net/images/login_logo.gif"></td>
+			<td align="right" height="15" width="50%">
+			<h1 class="Layout_titulo" align="center">Simulador de Distâncias</h1></td>		
+		</tr>
+		<tr>
+			<td align="left" height="15" width="100%" colspan="2"><img src="http://www.intelog.net/images/barra_sup_simulador.jpg" width="100%"></td>
+		</tr>
+	</table>
+	<div id="pesquisa">	
+		<form name="simulador" id="simulador" action="simuladorv2.asp.html#" onsubmit="calcRoute(); return false;" style="margin:0;">
+			<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+				<tr>
+					<td align="center" height="30" width="100%">
+					<p>Informe o endereço de origem e destino e clique em 'Simular'.</p></td>
+				</tr>
+			</table>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+				<tr>
+					<td align="left" width="50%" height="10">
+					<p class="destaque">Origem</p>
+					<input type="text" id="origem" name="origem" size="35" onfocus="this.select();" />
+					<p class="discreto">Ex: Porto Alegre, RS</p></td>
+					<td align="left" width="50%" height="10">
+					<p class="destaque">Destino</p>
+					<input type="text" id="destino" name="destino" size="35" value="" onfocus="this.select();"/>
+					<p class="discreto">Ex: Santa Maria, RS</p></td>
+				</tr>
+				<tr>
+					<td align="center" width="100%" colspan="2" height="60"><input type="image" name="send" src="http://www.intelog.net/images/botao_simular.jpg" style="border:none;"/></td>
+				</tr>
+			</table>
+			<div id="divResultado" style="display:none; background:#f2f2f2;margin:0;padding:10px;">
+				<table border="0" width="95%" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+					<tr>
+						<td align="left" width="52%" height="10%" valign="top">
+						<p><b>Origem</b></p>
+						<p class="destaque" id="resultsorigem"></p></td>
+						<td align="left" width="48%" height="10%" valign="top">
+						<p><b>Destino</b></p>
+						<p id="resultsdestino" class="destaque"></p></td>
+					</tr>
+					<tr>
+						<td align="left" width="52%" height="10%" valign="top">&nbsp;</td>
+						<td align="left" width="48%" height="10%" valign="top">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="left" width="52%" height="10%" valign="top">
+						<p><b>Distância (Em estrada)</b></p>
+						<p class="destaque" id="resultsdistancia"></p></td>
+						<td align="left" width="48%" height="10%" valign="top">
+						<p><b>Tempo estimado de viagem (pelo sistema)</b></p>
+						<p class="destaque" id="resultstempo"></p></td>
+					</tr>
+					<tr>
+						<td align="left" width="52%" height="10%" valign="top">&nbsp;</td>
+						<td align="left" width="48%" height="10%" valign="top">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="left" width="52%" height="10%" valign="top">
+						<p><b>Rotas Disponíveis</b></p>
+						<p class="destaque" id="resultsrotas"><select name="SelectRoutes" id="SelectRoutes" onchange="Recalcular();" style="width:250px" class="campo"></select></p></td>
+						<td align="left" width="48%" height="10%" valign="top">
+						<p><b>Faça sua simulação do tempo de viagem</b></p>
+						<p>Velocidade Média <input type="text" name="Velocidade" id="Velocidade" size="5" maxlength="3" value="80" onkeyup="CalculaTempo();" style="text-align:center;font-weight:bold;"> Km/h</p>
+						<p class="destaque" id="TempoVariavel"></p></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id="divErro" style="display:none;background:#f2f2f2;margin:0;padding:10px;">
+		<p id="pErro" class="destaque" align="center">Erro</p>
+	</div>
+	<div id="MapasRotas" style=" display:none;background:#f2f2f2;margin-top:10px;padding:10px;">
+		<table width="95%" style="margin:0;">
+	    	<tr style="font-size:11px">
+	   			<td valign="top">
+					<p align="left"><b>Rota <span id="sRotaNome"></span></b></p>
+					<div id="Rota" style="width:270px"></div>
+				</td>
+	    		<td valign="top">
+					<p align="left"><b>Mapa</b></p>
+					<div id="Mapa" style="width:300px; height:350px; margin:15px 0 0 0;border:1px solid #CCCCCC "></div>
+				</td>
+	    	</tr>
+	    </table> 
+	</div>
+</div>	
+
+</body>
+</html>
